@@ -5,16 +5,17 @@ Weather Forecasting Tool - Create a command line tool that accepts a city's name
 Python
 
 # How Github copilot Helped me
- 1. Generated python cli app that accpet parameters and connect to Open weather Api
- 2. Implemented Error handling mechanisms(ex :401, timeout etc)
- 3. Generated Unit testcases for written code block (first generated test cases for ame file , later enhanced to separate file)
- 4. Enhanced modularity by splitting single large method to 3 small methods
- 5. Generated code comments for written code
- 6. Generated Readme documentation file for written application (License section and other aspects we got from copilot docs)
- 7. Suggested best practces like use of config files , separation of unit test cases to new file etc
- 8. suggested solutuon for missed library installations (not installed requestes library , git hub suggested fix)
- 9. Formatted cli output to tabular (Json list is modified as tabular one)
- 10. suggested security vulnerbilties anf fixes for errors ( Ex api key should not be hardcoded etc keep it in os environment etc)
+ 1. Connect With weather Api (Generated python cli app that accpet parameters and connect to Open weather Api)
+ 2. Error handling mechanisms Implementaation(ex :401, timeout etc)
+ 3. code generation for Data Validations (city Variable type check, length check )
+ 4. Generated Unit testcases for written code block (first generated test cases for ame file , later enhanced to separate file)
+ 5. Enhanced modularity by splitting single large method to 3 small methods
+ 6. Generated code comments for written code
+ 7. Generated Readme documentation file for written application (License section and other aspects we got from copilot docs)
+ 8. Suggested best practces like use of config files , separation of unit test cases to new file etc
+ 9. suggested solutuon for missed library installations (not installed requestes library , git hub suggested fix)
+ 10. Formatted cli output to tabular (Json list is modified as tabular one)
+ 11. suggested security vulnerbilties anf fixes for errors ( Ex api key should not be hardcoded etc keep it in os environment etc)
 
 
  # How to run

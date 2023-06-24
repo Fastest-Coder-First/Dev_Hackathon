@@ -75,11 +75,11 @@ The script handles various error scenarios that may occur when making requests t
 
 # The following error scenarios are handled:
 
-Invalid API key: If the API key is invalid, the API will return a 401 Unauthorized status code. The script will raise a ValueError with an error message indicating that the API key is invalid.
-Invalid city name: If the city name is invalid, the API will return a 404 Not Found status code. The script will raise a ValueError with an error message indicating that the city name is invalid.
-HTTP error: If the API returns an HTTP error status code (other than 401 or 404), the script will raise a ValueError with an error message indicating that an HTTP error occurred.
-Connection error: If the script is unable to connect to the API due to a network error, the script will raise a ValueError with an error message indicating that a connection error occurred.
-Timeout error: If the API request times out, the script will raise a ValueError with an error message indicating that the request timed out.
+1. Invalid API key: If the API key is invalid, the API will return a 401 Unauthorized status code. The script will raise a ValueError with an error message indicating that the API key is invalid.
+2. Invalid city name: If the city name is invalid, the API will return a 404 Not Found status code. The script will raise a ValueError with an error message indicating that the city name is invalid.
+3. HTTP error: If the API returns an HTTP error status code (other than 401 or 404), the script will raise a ValueError with an error message indicating that an HTTP error occurred.
+4. Connection error: If the script is unable to connect to the API due to a network error, the script will raise a ValueError with an error message indicating that a connection error occurred.
+5. Timeout error: If the API request times out, the script will raise a ValueError with an error message indicating that the request timed out.
 
 # API Key
 To use the OpenWeatherMap API, you will need to obtain an API key from the OpenWeatherMap website. Once you have obtained an API key, you can either store it in a separate configuration file or as an environment variable.

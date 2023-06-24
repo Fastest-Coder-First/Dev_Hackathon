@@ -4,7 +4,7 @@ Weather Forecasting Tool - Create a command line tool that accepts a city's name
 # Language
 Python
 
-# How Github copilot Helped me
+# How Github copilot Helped me Implemented Solutions
  1. Connect With weather Api (Generated python cli app that accpet parameters and connect to Open weather Api)
  2. Error handling mechanisms Implementaation(ex :401, timeout etc)
  3. code generation for Data Validations (city Variable type check, length check )
@@ -16,6 +16,12 @@ Python
  9. suggested solutuon for missed library installations (not installed requestes library , git hub suggested fix)
  10. Formatted cli output to tabular (Json list is modified as tabular one)
  11. suggested security vulnerbilties anf fixes for errors ( Ex api key should not be hardcoded etc keep it in os environment etc)
+ 12.  # Suggested fix to prevent injection attacks added regex to validate input
+
+# How Github copilot Helped scenarios but not implemented due to limited development knowedge
+
+1.Git hub suggested enable logging instead of print
+2.Suggested redis based cache mechanism whenasked for performance enhancement
 
 
  # How to run

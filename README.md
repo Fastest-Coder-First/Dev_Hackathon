@@ -37,9 +37,9 @@ Python
 This is a Python script that retrieves weather data from the OpenWeatherMap API and displays the current weather and a 5-day forecast for a given city.
 
 # Usage
-To use the script, run the following command: 
+1. To use the script, run the following command: 
 python weather.py <city>
-Replace <city> with the name of the city you want to retrieve weather data for.
+2. Replace <city> with the name of the city you want to retrieve weather data for.
 For example, to retrieve weather data for New York, run:
 python weather.py "New York"
 

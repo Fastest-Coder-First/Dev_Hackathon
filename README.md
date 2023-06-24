@@ -40,15 +40,16 @@ python weather.py "New York"
 **Screen Shot**
 1.Success Scenario
 
-![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/46555ad7-2893-405c-a652-fcd9d341c993)
+![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/ab50b2e0-73e2-4d3b-a0fa-d267fa063cbb)
 
 2.Giving invalid city input
 
-![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/e88cf343-52ac-47ab-8f74-9441b75a972f)
+![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/806fa250-ff88-423f-83c3-875189887d19)
 
 # Architecture 
 
-![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/e4da91a0-e223-4451-b8ed-14d009e97d18)
+![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/f00b2423-24a3-4cf8-bc5f-43fed51d4bb5)
+
 
 # Github Generated Documentation
 # Weather App

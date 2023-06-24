@@ -58,10 +58,12 @@ This is a Python script that retrieves weather data from the OpenWeatherMap API 
 The script validates the input city name to ensure that it is a valid string. If the input is not a valid string, the script will raise a ValueError with an appropriate error message.
 
 # Dependencies
+Dependencies
 The weather.py module has the following dependencies:
 
-requests: This module is used to make HTTP requests to the OpenWeatherMap API to retrieve weather data.
-You can install these dependencies using pip, the Python package manager. To install requests, run the following command:
+1. configparser: This module is used to read configuration data from the config.ini file.
+2. requests: This module is used to make HTTP requests to the OpenWeatherMap API to retrieve weather data.
+3. re: This module is used to validate user input to prevent injection attacks.
 
 pip install requests
 This will install the latest version of the requests module.

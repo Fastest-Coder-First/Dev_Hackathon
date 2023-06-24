@@ -1,8 +1,19 @@
-﻿# How to run
+# Problem Statement
+Weather Forecasting Tool - Create a command line tool that accepts a city's name and returns the current weather forecast. Leverage OpenWeatherMap API to fetch weather data and parse it using Python. Your solution should demonstrate how GitHub Copilot can help you with API usage, data parsing, and error handling.
+
+# Language
+Python
+
+
+ # How to run
 
  1. Download the code file and Open terminal at Dev_Hackathon/src folder
  2. Run Python weather.py <cityname as parameter>
  3. Review Changes at terminal
+
+**Screen Shot**
+![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/46555ad7-2893-405c-a652-fcd9d341c993)
+
  
 
 Github Copilot code explanation

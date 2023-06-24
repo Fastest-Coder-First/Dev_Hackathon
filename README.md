@@ -24,9 +24,11 @@ Python
 
 **Screen Shot**
 1.Success Scenario
+
 ![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/46555ad7-2893-405c-a652-fcd9d341c993)
 
 2.Giving invalid city input
+
 ![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/e88cf343-52ac-47ab-8f74-9441b75a972f)
 
 

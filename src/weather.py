@@ -8,7 +8,7 @@ config.read('config.ini')
 
 
 "Api parameters"
-API_KEY = "5e88f2488e93e15b31de9f3b8008dc1d" # Replace with your own API key
+API_KEY = config.get('openweathermap', 'api_key') # Replace with your own API key
 
 "Reding url details for config file"
 API_URL = config.get('openweathermap', 'api_url')

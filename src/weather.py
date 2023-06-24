@@ -2,14 +2,13 @@
 import argparse
 import requests
 import configparser
-
-
-"Api parameters"
-API_KEY = config.get('openweathermap', 'api_key') # Replace with your own API key
-
+import  re
 "Reding url details for config file"
 config = configparser.ConfigParser()
 config.read('config.ini')
+
+"Api parameters"
+API_KEY = config.get('openweathermap', 'api_key') # Replace with your own API key
 API_URL = config.get('openweathermap', 'api_url')
 
 API_FORECAST_ENDPOINT = "forecast"
@@ -17,6 +16,9 @@ API_FORECAST_URL = f"{API_URL}/{API_FORECAST_ENDPOINT}"
 
 def validate_input(city):
     """    Validates the input city name.   """
+    # Validate input to prevent injection attacks
+    if not re.match(r'^[a-zA-Z ]+$', city):
+        raise ValueError("Invalid city name")
     if not isinstance(city, str):
         raise ValueError("City name must be a string")
     if not city.isalpha():

@@ -39,6 +39,17 @@ python weather.py "New York"
 # Input Validation
 The script validates the input city name to ensure that it is a valid string. If the input is not a valid string, the script will raise a ValueError with an appropriate error message.
 
+# Dependencies
+The weather.py module has the following dependencies:
+
+requests: This module is used to make HTTP requests to the OpenWeatherMap API to retrieve weather data.
+You can install these dependencies using pip, the Python package manager. To install requests, run the following command:
+
+pip install requests
+This will install the latest version of the requests module.
+
+Note that the weather.py module also requires an API key from OpenWeatherMap to retrieve weather data.
+
 # Error Handling
 The script handles various error scenarios that may occur when making requests to the OpenWeatherMap API. If an error occurs, the script will raise a ValueError with an appropriate error message.
 

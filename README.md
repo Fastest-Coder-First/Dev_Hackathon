@@ -22,6 +22,7 @@ Python
  3. Review Changes at terminal
 
 **Screen Shot**
+
 ![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/46555ad7-2893-405c-a652-fcd9d341c993)
 
 # Github Generated Documentation

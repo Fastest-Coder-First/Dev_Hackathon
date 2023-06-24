@@ -3,29 +3,20 @@ import argparse
 import requests
 import configparser
 
-config = configparser.ConfigParser()
-config.read('config.ini')
-
 
 "Api parameters"
 API_KEY = config.get('openweathermap', 'api_key') # Replace with your own API key
 
 "Reding url details for config file"
+config = configparser.ConfigParser()
+config.read('config.ini')
 API_URL = config.get('openweathermap', 'api_url')
 
 API_FORECAST_ENDPOINT = "forecast"
 API_FORECAST_URL = f"{API_URL}/{API_FORECAST_ENDPOINT}"
 
 def validate_input(city):
-    """
-    Validates the input city name.
-
-    Args:
-        city (str): The name of the city to validate.
-
-    Raises:
-        ValueError: If the city name is invalid.
-    """
+    """    Validates the input city name.   """
     if not isinstance(city, str):
         raise ValueError("City name must be a string")
     if not city.isalpha():
@@ -39,15 +30,6 @@ def validate_input(city):
 def make_api_request(city):
     """
     Sends an API request to OpenWeatherMap and returns the response object.
-
-    Args:
-        city (str): The name of the city to get weather data for.
-
-    Returns:
-        requests.Response: The response object from the API request.
-
-    Raises:
-        ValueError: If an error occurs while making the API request.
     """
     params = {"q": city, "appid": API_KEY, "units": "metric"}
     try:

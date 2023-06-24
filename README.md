@@ -13,6 +13,7 @@ Python
  6. Generated Readme documentation file for written application
  7. Suggested best practces like use of config files , separation of unit test cases to new file etc
  8. suggested solutuon for missed library installations
+ 9. Enhance cli output to tabular format
 
 
  # How to run

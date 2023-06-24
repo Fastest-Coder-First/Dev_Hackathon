@@ -1,13 +1,20 @@
 
 import argparse
 import requests
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
 
 
 "Api parameters"
 API_KEY = "5e88f2488e93e15b31de9f3b8008dc1d" # Replace with your own API key
-API_URL = "https://api.openweathermap.org/data/2.5/forecast"
 
+"Reding url details for config file"
+API_URL = config.get('openweathermap', 'api_url')
 
+API_FORECAST_ENDPOINT = "forecast"
+API_FORECAST_URL = f"{API_URL}/{API_FORECAST_ENDPOINT}"
 
 def validate_input(city):
     """
@@ -44,7 +51,7 @@ def make_api_request(city):
     """
     params = {"q": city, "appid": API_KEY, "units": "metric"}
     try:
-        response = requests.get(API_URL, params=params, timeout=5)
+        response = requests.get(API_FORECAST_URL, params=params, timeout=5)
         response.raise_for_status()  # raise an exception for 4xx or 5xx status codes
     except requests.exceptions.HTTPError as err:
         if response.status_code == 401:

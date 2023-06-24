@@ -7,13 +7,14 @@ Python
 # How Github copilot Helped me
  1. Generated python cli app that accpet parameters and connect to Open weather Api
  2. Implemented Error handling mechanisms(ex :401, timeout etc)
- 3. Generated Unit testcases for written code block
+ 3. Generated Unit testcases for written code block (first generated test cases for ame file , later enhanced to separate file)
  4. Enhanced modularity by splitting single large method to 3 small methods
  5. Generated code comments for written code
- 6. Generated Readme documentation file for written application
+ 6. Generated Readme documentation file for written application (License section and other aspects we got from copilot docs)
  7. Suggested best practces like use of config files , separation of unit test cases to new file etc
- 8. suggested solutuon for missed library installations
- 9. Enhance cli output to tabular format
+ 8. suggested solutuon for missed library installations (not installed requestes library , git hub suggested fix)
+ 9. Formatted cli output to tabular (Json list is modified as tabular one)
+ 10. suggested security vulnerbilties anf fixes for errors ( Ex api key should not be hardcoded etc keep it in os environment etc)
 
 
  # How to run
@@ -38,6 +39,9 @@ python weather.py "New York"
 
 ![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/e88cf343-52ac-47ab-8f74-9441b75a972f)
 
+# Architecture 
+
+![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/e4da91a0-e223-4451-b8ed-14d009e97d18)
 
 # Github Generated Documentation
 # Weather App

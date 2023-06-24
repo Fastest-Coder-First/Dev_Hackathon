@@ -22,6 +22,13 @@ Python
  2. Run Python weather.py <cityname as parameter>
  3. Review Changes at terminal
 
+# Usage
+1. To use the script, run the following command: 
+python weather.py <city>
+2. Replace <city> with the name of the city you want to retrieve weather data for.
+For example, to retrieve weather data for New York, run:
+python weather.py "New York"
+
 **Screen Shot**
 1.Success Scenario
 
@@ -35,13 +42,6 @@ Python
 # Github Generated Documentation
 # Weather App
 This is a Python script that retrieves weather data from the OpenWeatherMap API and displays the current weather and a 5-day forecast for a given city.
-
-# Usage
-1. To use the script, run the following command: 
-python weather.py <city>
-2. Replace <city> with the name of the city you want to retrieve weather data for.
-For example, to retrieve weather data for New York, run:
-python weather.py "New York"
 
 # Input Validation
 The script validates the input city name to ensure that it is a valid string. If the input is not a valid string, the script will raise a ValueError with an appropriate error message.

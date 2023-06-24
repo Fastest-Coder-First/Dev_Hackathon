@@ -20,8 +20,8 @@ Python
 
 # How Github copilot Helped scenarios but not implemented due to limited development knowedge
 
-1.Git hub suggested enable logging instead of print
-2.Suggested redis based cache mechanism whenasked for performance enhancement
+1. Git hub suggested enable logging instead of print
+2. Suggested redis based cache mechanism whenasked for performance enhancement
 
 
  # How to run

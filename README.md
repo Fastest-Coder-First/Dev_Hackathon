@@ -4,6 +4,16 @@ Weather Forecasting Tool - Create a command line tool that accepts a city's name
 # Language
 Python
 
+# How Github copilot Helped me
+ 1. Generated python cli app that accpet parameters and connect to Open weather Api
+ 2. Implemented Error handling mechanisms(ex :401, timeout etc)
+ 3. Generated Unit testcases for written code block
+ 4. Enhanced modularity by splitting single large method to 3 small methods
+ 5. Generated code comments for written code
+ 6. Generated Readme documentation file for written application
+ 7. Suggested best practces like use of config files , separation of unit test cases to new file etc
+ 8. suggested solutuon for missed library installations
+
 
  # How to run
 
@@ -14,7 +24,7 @@ Python
 **Screen Shot**
 ![image](https://github.com/Fastest-Coder-First/Dev_Hackathon/assets/36884631/46555ad7-2893-405c-a652-fcd9d341c993)
 
-# Github Generate dDocumentation
+# Github Generated Documentation
 # Weather App
 This is a Python script that retrieves weather data from the OpenWeatherMap API and displays the current weather and a 5-day forecast for a given city.
 

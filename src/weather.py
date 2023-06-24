@@ -10,7 +10,7 @@ API_URL = "https://api.openweathermap.org/data/2.5/forecast"
 def get_weather(city):
     params = {"q": city, "appid": API_KEY, "units": "metric"}
     try:
-        response = requests.get(API_URL, params=params)
+        response = requests.get(API_URL, params=params, timeout=5)
         response.raise_for_status()  # raise an exception for 4xx or 5xx status codes
     except requests.exceptions.HTTPError as err:
         print(f"HTTP error occurred: {err}")
@@ -18,7 +18,17 @@ def get_weather(city):
     except requests.exceptions.RequestException as err:
         print(f"An error occurred: {err}")
         return
-    data = response.json()
+    except requests.exceptions.ConnectionError as err:
+        print(f"Connection error occurred: {err}")
+        return
+    except requests.exceptions.Timeout as err:
+        print(f"Request timed out: {err}")
+        return
+    try:
+        data = response.json()
+    except ValueError as err:
+        print(f"Error parsing response: {err}")
+        return
     try:
         current_temp = data["list"][0]["main"]["temp"]
         current_desc = data["list"][0]["weather"][0]["description"]
@@ -32,7 +42,7 @@ def get_weather(city):
         temp = forecast["main"]["temp"]
         desc = forecast["weather"][0]["description"]
         print(f"{date}: {temp}°C, {desc}")
-
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Get current weather and 5-day forecast for a city")
     parser.add_argument("city", type=str, help="City name")
